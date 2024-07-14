@@ -8,6 +8,7 @@
 <body>
     <h1>Add a to do item:</h1>
     <form method="POST" action="add">
+        {% csrf_token %}
         <div><p>
             <label for="id_name">Name:</label>
             <input type="text" name="item_name" id="id_name">
